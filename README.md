@@ -2,7 +2,7 @@
 
 ### WandB Demo Scripts
 
-This repository contains two Python scripts that demonstrate how to use [Weights & Biases (W&B)](https://wandb.ai) for tracking and visualizing machine learning experiments.
+This repository contains Python scripts that demonstrate how to use [Weights & Biases (W&B)](https://wandb.ai) for tracking and visualizing machine learning experiments.
 
 #### **Scripts Included**
 1. **`hello-wandb.py`**:
@@ -15,15 +15,27 @@ This repository contains two Python scripts that demonstrate how to use [Weights
      - Tracks hyperparameters like learning rate and architecture.
      - Saves and uploads a dummy model file.
 
+3. **`fruit-extractor-weave.py`**:
+   - Combines W&B Weave with the OpenAI API to track and log sentence parsing tasks.
+   - Parses sentences into structured JSON objects with keys like `fruit`, `color`, and `flavor`.
+   - Demonstrates integration of external APIs and W&B’s function tracking capabilities.
+
 #### **Setup**
 1. **Install W&B**:
 
    ```sh
-   pip install wandb
+   pip install wandb weave openai
    ```
 
 2. **Log In**:
    - Run `wandb login` and authenticate using the provided link.
+
+3. **Set OpenAI API Key**:
+   - Store your API key as an environment variable:
+
+     ```sh
+     export OPENAI_API_KEY=your_api_key_here
+     ```
 
 #### **How to Run**
 1. Run the beginner script:
@@ -42,15 +54,15 @@ This repository contains two Python scripts that demonstrate how to use [Weights
 
    - Logs metrics and files to the project `advanced-wandb-demo`.
 
+3. Run the fruit extraction script:
+
+   ```sh
+   python fruit-extractor-weave.py
+   ```
+
+   - Tracks sentence parsing tasks and outputs structured JSON.
+
 #### **View Results**
-- Visit [W&B](https://wandb.ai) and navigate to the respective projects (`my-awesome-project` or `advanced-wandb-demo`) to view dashboards with logged metrics and configurations. 
-
----
-
-My projects:
-
-https://wandb.ai/tdiprima/my-awesome-project
-
-https://wandb.ai/tdiprima/advanced-wandb-demo
+- Visit [W&B](https://wandb.ai) and navigate to the respective projects (`my-awesome-project`, `advanced-wandb-demo`, or `PyTorch Experiments`) to view dashboards with logged metrics and configurations. 
 
 <br>
