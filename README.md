@@ -1,4 +1,4 @@
-# hello-wandb
+# wandb-toolkit
 
 ### WandB Demo Scripts
 
