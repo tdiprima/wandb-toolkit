@@ -63,6 +63,13 @@ This repository contains Python scripts that demonstrate how to use [Weights & B
    - Tracks sentence parsing tasks and outputs structured JSON.
 
 #### **View Results**
-- Visit [W&B](https://wandb.ai) and navigate to the respective projects (`my-awesome-project`, `advanced-wandb-demo`, or `PyTorch Experiments`) to view dashboards with logged metrics and configurations. 
+- Visit [W&B](https://wandb.ai) and navigate to the respective projects (`my-awesome-project`, `advanced-wandb-demo`, or `PyTorch Experiments`) to view dashboards with logged metrics and configurations.
+
+### Licensing Notice
+
+This project includes third-party open-source code, which remains subject to its original licenses.  
+Attribution is provided in the source code where applicable.  
+
+If you believe there is an issue with licensing, please **open an issue** or **contact the repository owner** for resolution.
 
 <br>
